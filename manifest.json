@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Amazon Media Downloader",
+  "version": "1.1.0",
+  "description": "Download product listing videos (gallery and review videos) from Amazon pages.",
+  "permissions": ["activeTab", "scripting", "downloads", "webRequest", "offscreen", "storage"],
+  "host_permissions": [
+    "*://*.amazon.com/*", "*://*.amazon.co.uk/*", "*://*.amazon.de/*", "*://*.amazon.fr/*",
+    "*://*.amazon.it/*", "*://*.amazon.es/*", "*://*.amazon.ca/*", "*://*.amazon.com.au/*",
+    "*://*.amazon.co.jp/*", "*://*.amazon.in/*", "*://*.amazon.ae/*", "*://*.amazon.sa/*",
+    "*://*.amazon.com.br/*", "*://*.amazon.com.mx/*", "*://*.amazon.nl/*", "*://*.amazon.se/*",
+    "*://*.amazon.pl/*", "*://*.amazon.sg/*", "*://*.amazon.com.tr/*", "*://*.amazon.eg/*",
+    "*://*.media-amazon.com/*", "*://*.cloudfront.net/*"
+  ],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_popup": "popup.html", "default_title": "Amazon Media Downloader" },
+  "icons": { "16": "icon16.png", "48": "icon48.png", "128": "icon128.png" }
+}
